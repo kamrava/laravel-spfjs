@@ -1,5 +1,5 @@
 <?php
-namespace Kamrava\Laravel_SPF;
+namespace Kamrava\Spf;
 
 class PartialView {
     private $path;
