@@ -18,3 +18,30 @@ Install with composer:
 composer require kamrava/laravel-spf
 ```
 ## Get Started
+At the first, you need to download `spf.js` file manually and put it in your scripts sections in your laravel app.(probably in `scripts.blade.php` file!)
+
+To add SPF to your site, include the JS file as I said in above and run `spf.init()`.
+
+```html
+<script>
+  spf.init();
+</script>
+```
+
+**Blade Files Structure**
+`laravel-spf` will work with a convetion structure for blade files. As you know each HTML page consists of
+
+`head` for meta tags as well as styles and title and etc..
+`body` for your page body
+`script` for javascript files
+
+```html
+resources/view/admin/users-list/partials/title.blade.php
+resources/view/admin/users-list/partials/head.blade.php
+resources/view/admin/users-list/partials/body.blade.php
+resources/view/admin/users-list/partials/foot.blade.php
+```
+
+**License**
+
+The MIT License (MIT). Please see License File for more information.
