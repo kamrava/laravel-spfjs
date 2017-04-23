@@ -4,7 +4,7 @@ namespace Kamrava\Spf;
 use Illuminate\Support\ServiceProvider;
 use App;
 
-class PartialViewServiceProvider extends ServiceProvider
+class SectionViewServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -23,9 +23,9 @@ class PartialViewServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        App::bind('partialview', function()
+        App::bind('sectionview', function()
         {
-            return new \Kamrava\Spf\PartialView;
+            return new \Kamrava\Spf\SectionView;
         });
     }
 

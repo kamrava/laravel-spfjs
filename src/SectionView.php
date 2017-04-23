@@ -1,7 +1,7 @@
 <?php
 namespace Kamrava\Spf;
 
-class PartialView {
+class SectionView {
     private $path;
     private $data;
 
