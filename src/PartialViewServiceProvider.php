@@ -1,6 +1,5 @@
 <?php
-
-namespace Kamrava\Laravel_SPF;
+namespace Kamrava\LaravelSPF;
 
 use Illuminate\Support\ServiceProvider;
 use App;
@@ -26,7 +25,7 @@ class PartialViewServiceProvider extends ServiceProvider
     {
         App::bind('partialview', function()
         {
-            return new \Kamrava\Laravel_SPF\PartialView;
+            return new \Kamrava\LaravelSPF\PartialView;
         });
     }
 
