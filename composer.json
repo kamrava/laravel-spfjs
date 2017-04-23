@@ -11,5 +11,10 @@
     ],
     "minimum-stability": "stable",
     "prefer-stable": true,
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Kamrava\\Spf\\": "src"
+        }
+    }
 }
