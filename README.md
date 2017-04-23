@@ -17,14 +17,27 @@ Install with composer:
 ```sh
 composer require kamrava/laravel-spfjs
 ```
-To generate assets:
+
+Service Provider :
+```php
+Kamrava\Laravel_SPF\PartialViewServiceProvider::class
+```
+Alias:
+```php
+'PartialView'=> Kamrava\Laravel_SPF\PartialViewFacade::class
+```
+
+Then generate assets:
 ```sh
 php artisan vendor:publish --tag=public --force
 ```
+And that's it! Start building out some awesome and fast Laravel app!
+
 ## Get Started
 
 
 **Blade Files Structure**
+
 `laravel-spf` will work with a convetion structure for blade files. As you know each HTML page consists of
 
 `head` for meta tags as well as styles and title and etc..
