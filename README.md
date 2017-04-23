@@ -1,6 +1,6 @@
 ![Laravel SPF.js](http://up.vbiran.ir/uploads/1716814929346864017_laravel-spfjs.png)
 
-# Laravel SPF
+# SPF.js For Laravel 5.x
 Integrating SPF.js with Laravel
 
 For Laravel 5.x
@@ -15,18 +15,14 @@ Laravel SPF package allows to bring awesome SPF.js to your Laravel app. Here is 
 
 Install with composer:
 ```sh
-composer require kamrava/laravel-spf
+composer require kamrava/laravel-spfjs
+```
+To generate assets:
+```sh
+php artisan vendor:publish --tag=public --force
 ```
 ## Get Started
-At the first, you need to download `spf.js` file manually and put it in your scripts sections in your laravel app.(probably in `scripts.blade.php` file!)
 
-To add SPF to your site, include the JS file as I said in above and run `spf.init()`.
-
-```html
-<script>
-  spf.init();
-</script>
-```
 
 **Blade Files Structure**
 `laravel-spf` will work with a convetion structure for blade files. As you know each HTML page consists of
