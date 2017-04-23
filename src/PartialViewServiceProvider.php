@@ -14,7 +14,7 @@ class PartialViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->publishAssets();
     }
 
     /**
@@ -28,5 +28,15 @@ class PartialViewServiceProvider extends ServiceProvider
         {
             return new \Kamrava\Laravel_SPF\PartialView;
         });
+    }
+
+    /**
+     * Publish public assets.
+     */
+    protected function publishAssets()
+    {
+        $this->publishes([
+            realpath(__DIR__.'/../public') => public_path('vendor/laravel-spf'),
+        ], 'public');
     }
 }
