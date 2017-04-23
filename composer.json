@@ -1,0 +1,14 @@
+{
+    "name": "kamrava/laravel-spfjs",
+    "description": "Integrating SPF.js With Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hamed Kamrava",
+            "email": "h.kamrava1@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
