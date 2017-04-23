@@ -1,5 +1,5 @@
 <?php
-namespace Kamrava\SPF;
+namespace Kamrava\Spf;
 
 use Illuminate\Support\Facades\Facade;
 
