@@ -20,10 +20,10 @@ class SectionView {
     public function render()
     {
         $sections = [
-            'title' => view($this->path.'.sections._title')->with($this->data)->render(),
-            'head'  => view($this->path.'.sections._head' )->with($this->data)->render(),
-            'body'  => view($this->path.'.sections._body' )->with($this->data)->render(),
-            'foot'  => view($this->path.'.sections._foot' )->with($this->data)->render()
+            'title' => $this->viewExists($this->path.'.sections._title'),
+            'head'  => $this->viewExists($this->path.'.sections._head'),
+            'body'  => $this->viewExists($this->path.'.sections._body'),
+            'foot'  => $this->viewExists($this->path.'.sections._foot'),
         ];
         $output = $this->addSlashesAndRemoveLines($sections);
         $sections = json_decode(json_encode($output, JSON_FORCE_OBJECT));
@@ -41,5 +41,12 @@ class SectionView {
             }
             return $result;
         }
+    }
+
+    private function viewExists($viewPath)
+    {
+        if(view()->exists($viewPath))
+            return view($viewPath)->with($this->data)->render();
+        return false;
     }
 }
