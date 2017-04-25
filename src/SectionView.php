@@ -26,8 +26,8 @@ class SectionView {
             'foot'  => $this->viewExists($this->path.'.sections._foot'),
         ];
         $output = $this->addSlashesAndRemoveLines($sections);
-        $sections = json_decode(json_encode($output, JSON_FORCE_OBJECT));
-        return view($this->path.'.spf_json', ['sections' => $sections]);
+        $section = json_decode(json_encode($output, JSON_FORCE_OBJECT));
+        return view($this->path.'.spf_json', ['section' => $section]);
     }
 
     private function addSlashesAndRemoveLines($sections)
