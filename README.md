@@ -1,5 +1,9 @@
 ![Laravel SPF.js](http://up.vbiran.ir/uploads/1716814929346864017_laravel-spfjs.png)
 
+[![Laravel 5.x](https://img.shields.io/badge/Laravel-5.x-orange.svg?style=flat-square)](https://github.com/kamrava/laravel-spfjs)
+[![Latest Version](https://img.shields.io/github/release/kamrava/laravel-spfjs.svg?style=flat-square)](https://github.com/kamrava/laravel-spfjs/releases)
+[![License](https://poser.pugx.org/kamrava/laravel-spfjs/license.svg?style=flat-square)](https://packagist.org/packages/kamrava/laravel-spfjs)
+
 # Laravel SPF
 Integrating SPF.js with Laravel
 
@@ -10,6 +14,10 @@ Laravel SPF package allows to bring awesome SPF.js to your Laravel app. Here is 
 > Structured Page Fragments — or SPF for short — is a lightweight JS framework for fast navigation and page updates from YouTube.
 > 
 > Using progressive enhancement and HTML5, SPF integrates with your site to enable a faster, more fluid user experience by updating just the sections of the page that change during navigation, not the whole page. SPF provides a response format for sending document fragments, a robust system for script and style management, an in-memory cache, on-the-fly processing, and more.
+
+[Demo](http://reek.ir/demo)
+
+[Demo Source Code](https://github.com/kamrava/laravel-spfjs-demo)
 
 ## Installation
 
@@ -139,12 +147,12 @@ with this content :
 
 ```php
 {
-  "title": "{!! $sections->title !!}",
-  "head": "{!! $sections->head !!}",
+  "title": "{!! $section->title !!}",
+  "head": "{!! $section->head !!}",
   "body": {
-    "main-content": "{!! $sections->body !!}"
+    "main-content": "{!! $section->body !!}"
     },
-  "foot": "{!! $sections->foot !!}"
+  "foot": "{!! $section->foot !!}"
 }
 ```
 
