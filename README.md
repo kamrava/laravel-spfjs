@@ -12,7 +12,7 @@ For Laravel 5.x
 Laravel SPF package allows to bring awesome SPF.js to your Laravel app. Here is a description from SPF.js official doc :
 
 > Structured Page Fragments — or SPF for short — is a lightweight JS framework for fast navigation and page updates from YouTube.
-> 
+>
 > Using progressive enhancement and HTML5, SPF integrates with your site to enable a faster, more fluid user experience by updating just the sections of the page that change during navigation, not the whole page. SPF provides a response format for sending document fragments, a robust system for script and style management, an in-memory cache, on-the-fly processing, and more.
 
 [Demo](http://reek.ir/demo)
@@ -73,8 +73,8 @@ And the file's content would be something like this :
 @extends('layouts.master')
 @section('title') Users List @stop
 @section('head')
-<link href="/css/style1.css" rel="stylesheet" /> 
-<link href="/css/style2.css" rel="stylesheet" /> 
+<link href="/css/style1.css" rel="stylesheet" />
+<link href="/css/style2.css" rel="stylesheet" />
 @stop
 @section('content')
 <table>
@@ -105,7 +105,7 @@ resources/view/admin/users-list/sections/_foot.blade.php
 Then put each section content into related blade file. For instance the content of ـhead.blade.php must be:
 
 ```html
-<link href="/css/style1.css" rel="stylesheet" /> 
+<link href="/css/style1.css" rel="stylesheet" />
 <link href="/css/style2.css" rel="stylesheet" />
 ```
 
@@ -230,7 +230,7 @@ To use dynamic navigation, SPF requires the HTML5 History API. This is broadly s
 
 **Maintainers:**
 
-1. [Hamed Kamrava](https://github.com/kamrava) @holykamix | [Twitter](https://twitter.com/holykamix)
+1. [Hamed Kamrava](https://github.com/kamrava
 
 2. ...
 
